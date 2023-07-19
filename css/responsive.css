@@ -1,0 +1,54 @@
+/* esto no se si dejarlo*/
+.hamburguesa {
+    display: none;
+    cursor: pointer;
+    float: right;
+    background: none;
+    border: none;
+}
+
+/* esto aun se puede ajustar pero esta funcional  */
+
+@media screen and (max-width: 768px){
+    nav ul {
+        display: none;
+    }
+    nav .hamburguesa {
+        display: block;
+    }
+    .logo {
+        width: 35%;
+    }
+}
+@media screen and (max-width:550px){
+    .logo {
+        width: 36%;
+    }
+    header {
+        padding: 1px;
+    }
+    form{
+        align-items: center;
+        justify-content: center;
+    }
+    footer{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+}
+@media screen and (max-width:450px){
+    .texto-borde{
+    -webkit-text-stroke: 1px black;
+    color: white; 
+    font-size: 30px;
+    }
+    .contactanos{
+      -webkit-text-stroke: 1px black;
+      color: rgb(226, 226, 12); 
+      font-size: 50px;
+      align-items: center;
+      justify-content: center;
+    }
+}

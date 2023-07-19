@@ -1,0 +1,129 @@
+header, nav, main, footer {
+    width: 100%;
+}
+.dark-mode #example_wrapper.table-dark {
+    background-color: #343a40;
+    color: #fff;
+  }
+  .jittery-button {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 1.3rem;
+    position: relative;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+   .jittery-button.active {
+    background-color:#343a40;
+  }
+  .jittery-button:hover {
+    animation: jitter 0.5s linear infinite;
+  }
+ 
+  @keyframes jitter {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-5px, -5px);
+    }
+    50% {
+      transform: translate(0, 0);
+    }
+    75% {
+      transform: translate(5px, 5px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+nav { 
+    background-color: black;
+}
+
+
+nav { 
+    background-color: black;
+}
+
+header{
+    height: 10%;
+}
+footer {
+    height: 6%;
+}
+form {
+    padding:10%;
+    margin: 0 auto;
+}
+ .logo{
+       width: 15%;
+       width: 13%;
+}
+.pascua{
+    background-image: url("/img/fondoPascua.png");
+    background-size: cover;
+}
+input[type="radio"] {
+    display: none;
+  }
+
+  .texto-borde {
+    -webkit-text-stroke: 1px black;
+    color: white; 
+    font-size: 30px;
+  }
+  .contactanos{
+    -webkit-text-stroke: 1px black;
+    color: rgb(226, 226, 12); 
+    font-size: 60px;
+  }
+  label {
+    color: grey;
+    font-size: 1.5rem;
+  }
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  .boton{
+    background-color: #218838;
+    color: white;
+    border: 3px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 23px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+  }
+  label:hover,
+label:hover ~ label {
+  color: orange;
+}
+input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+  /* Invisible texto */
+figcaption {
+    display:none; 
+    transition: all .5s;
+  }
+  /* Visible texto */
+  figure:hover > figcaption {
+    display:block;
+    transition: all .5s;
+  }
